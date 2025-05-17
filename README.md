@@ -1,123 +1,80 @@
-# Modern Portfolio
+# Portfolio Website
 
-A modern portfolio website built with FastAPI and React.
+A modern, responsive portfolio website showcasing my professional experience and projects.
+
+## Live Demo
+
+Visit the live website: [Portfolio Website](https://hadeer-elsaeed.github.io/portfolio)
 
 ## Project Structure
 
-- `backend/`: FastAPI backend
-- `frontend/`: React frontend
-
-## Setup Instructions
-
-### Using Docker (Recommended)
-
-1. Make sure you have Docker and Docker Compose installed on your system.
-
-2. Build and run the containers:
-```bash
-docker-compose up --build
 ```
-
-The application will be available at:
-- Frontend: http://localhost
-- Backend API: http://localhost:8000
-- API Documentation: http://localhost:8000/docs
-
-To stop the containers:
-```bash
-docker-compose down
+portfolio/
+├── index.html        # Main HTML file
+├── css/
+│   └── style.css    # Custom styles
+├── js/
+│   ├── main.js      # Main JavaScript file
+│   └── data.js      # Content data
+└── images/          # Project and profile images
 ```
-
-### Manual Setup
-
-#### Backend Setup
-
-1. Navigate to the backend directory:
-```bash
-cd backend
-```
-
-2. Create a virtual environment:
-```bash
-python -m venv venv
-```
-
-3. Activate the virtual environment:
-- Windows:
-```bash
-.\venv\Scripts\activate
-```
-- Unix/MacOS:
-```bash
-source venv/bin/activate
-```
-
-4. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-5. Run the backend server:
-```bash
-python main.py
-```
-
-The backend will be available at `http://localhost:8000`
-
-#### Frontend Setup
-
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-The frontend will be available at `http://localhost:5173`
 
 ## Features
 
-- Modern, responsive design
-- Project showcase
-- About me section
+- Modern and responsive design
+- Hot pink theme with smooth animations
+- Professional experience showcase
+  - Trufla Technology
+  - Swira Designs
+- Project portfolio
 - Skills and technologies
 - Contact information
-- API documentation (available at `/docs` endpoint)
 
 ## Technologies Used
 
-- Backend:
-  - FastAPI
-  - Pydantic
-  - SQLAlchemy (ready for database integration)
-  - CORS middleware
+- HTML5
+- CSS3 (with animations)
+- JavaScript (ES6+)
+- Docker with Nginx for deployment
 
-- Frontend:
-  - React
-  - Vite
-  - React Router
-  - Tailwind CSS
-  - Framer Motion (for animations)
-  - Axios
+## Local Development
 
-## Docker Configuration
+1. Clone the repository:
+```bash
+git clone https://github.com/Hadeer-Elsaeed/portfolio.git
+cd portfolio
+```
 
-The project uses Docker and Docker Compose for containerization:
+2. Using Docker:
+```bash
+docker-compose up --build
+```
+The site will be available at `http://localhost`
 
-- Backend container:
-  - Python 3.11 slim image
-  - FastAPI application
-  - Hot-reload enabled for development
+3. Without Docker:
+- Simply open `index.html` in your browser
+- Or use a local server like Python's `http.server`:
+  ```bash
+  python -m http.server 8000
+  ```
+  Then visit `http://localhost:8000`
 
-- Frontend container:
-  - Multi-stage build with Node.js and Nginx
-  - Production-ready build
-  - Nginx configuration for SPA and API proxy 
+## Deployment
+
+The website is containerized using Docker and served with Nginx:
+
+1. The Nginx configuration handles:
+   - Static file serving
+   - Proper MIME types
+   - Caching headers
+   - Compression
+
+2. To deploy to production:
+   - Push changes to GitHub
+   - Configure your hosting provider
+   - Deploy the Docker container
+
+## Contact
+
+- Email: hadeerelsaeed25@gmail.com
+- GitHub: [Hadeer-Elsaeed](https://github.com/Hadeer-Elsaeed) 

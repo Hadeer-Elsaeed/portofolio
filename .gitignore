@@ -8,6 +8,13 @@ Thumbs.db
 *.swp
 *.swo
 
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~
+
 # Dependency directories
 node_modules/
 vendor/
@@ -22,8 +29,6 @@ dist/
 build/
 out/
 
-# Logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log* 
