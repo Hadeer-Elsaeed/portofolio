@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my professional experience and
 
 ## Live Demo
 
-Visit the live website: [Portfolio Website](https://hadeer-elsaeed.github.io/portfolio)
+Visit the live website: [Portfolio Website](https://hadeer-elsaeed.github.io/portofolio)
 
 ## Project Structure
 
@@ -76,5 +76,4 @@ The website is containerized using Docker and served with Nginx:
 
 ## Contact
 
-- Email: hadeerelsaeed25@gmail.com
 - GitHub: [Hadeer-Elsaeed](https://github.com/Hadeer-Elsaeed) 
